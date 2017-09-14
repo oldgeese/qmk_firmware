@@ -41,4 +41,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // customize how long before a tap becomes a hold (default:200)
 #define TAPPING_TERM    100
 
+#define PREVENT_STUCK_MODIFIERS
+
 #endif
