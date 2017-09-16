@@ -34,11 +34,12 @@ enum custom_keycodes {
 #define XXXXXXX KC_NO
 
 // my own shortcuts
-#define CTL_ESC CTL_T(KC_ESC)
-#define RAI_HEN LT(_RAISE, KC_HENK)
-#define LOW_MHE LT(_LOWER, KC_MHEN)
+#define CTL_ESC  CTL_T(KC_ESC)
+#define RAI_HEN  LT(_RAISE, KC_HENK)
+#define LOW_MHE  LT(_LOWER, KC_MHEN)
 #define M_ALTPSC M(0)
-#define SFT_ENT MT(MOD_RSFT, KC_ENT)
+#define SFT_ENT  MT(MOD_RSFT, KC_ENT)
+#define VIM_F    LT(_VIM, KC_F)
 
 #define ST_BOLT QK_STENO_BOLT
 #define ST_GEM  QK_STENO_GEMINI
@@ -61,9 +62,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_QWERTY] = KEYMAP( \
   KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, \
   KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
-  CTL_ESC,  KC_A,    KC_S,    KC_D,LT(_VIM, KC_F),    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
-  KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_ENT , \
-  ADJUST,  KC_LCTL, KC_LALT, KC_LGUI, LOW_MHE,   KC_SPC,  KC_SPC,  RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
+  CTL_ESC, KC_A,    KC_S,    KC_D,    VIM_F,   KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
+  KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_ENT, \
+  ADJUST,  KC_LCTL, KC_LALT, KC_LGUI, LOW_MHE, KC_SPC,  KC_SPC,  RAI_HEN, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT  \
 ),
 
 /* Colemak
@@ -84,7 +85,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSPC,\
   CTL_ESC,  KC_A,    KC_R,    KC_S,    KC_T,    KC_D,    KC_H,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT, \
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_ENT , \
-  ADJUST,  KC_LCTL, KC_LALT, KC_LGUI, LOW_MHE,   KC_SPC,  KC_SPC,  RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
+  ADJUST,  KC_LCTL, KC_LALT, KC_LGUI, LOW_MHE,   KC_SPC,  KC_SPC,  RAI_HEN,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
 ),
 
 /* Dvorak
@@ -105,7 +106,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,  KC_QUOT, KC_COMM, KC_DOT,  KC_P,    KC_Y,    KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_BSPC,\
   CTL_ESC,  KC_A,    KC_O,    KC_E,    KC_U,    KC_I,    KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_SLSH, \
   KC_LSFT, KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,    KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    SFT_ENT , \
-  ADJUST,  KC_LCTL, KC_LALT, KC_LGUI, LOW_MHE,   KC_SPC,  KC_SPC,  RAISE,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
+  ADJUST,  KC_LCTL, KC_LALT, KC_LGUI, LOW_MHE,   KC_SPC,  KC_SPC,  RAI_HEN,   KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT \
 ),
 
 /* Lower
