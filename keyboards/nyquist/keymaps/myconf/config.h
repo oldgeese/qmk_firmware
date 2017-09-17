@@ -43,4 +43,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define PREVENT_STUCK_MODIFIERS
 
+#define FORCE_NKRO
+
 #endif
