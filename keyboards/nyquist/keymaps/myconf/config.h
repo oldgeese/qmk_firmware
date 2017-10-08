@@ -45,4 +45,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define FORCE_NKRO
 
+// #define PERMISSIVE_HOLD
+
 #endif

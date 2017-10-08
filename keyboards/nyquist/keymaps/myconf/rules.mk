@@ -15,3 +15,5 @@ SLEEP_LED_ENABLEt= no
 API_SYSEX_ENABLE = no
 KEY_LOCK_ENABLE = no
 FAUXCLICKY_ENABLE = no
+
+SRC += action_pseudo_lut.c
