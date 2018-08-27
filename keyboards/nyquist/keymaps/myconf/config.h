@@ -39,7 +39,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_VAL_STEP 8
 
 // customize how long before a tap becomes a hold (default:200)
-#define TAPPING_TERM    100
+#define TAPPING_TERM    80
 
 #define PREVENT_STUCK_MODIFIERS
 
