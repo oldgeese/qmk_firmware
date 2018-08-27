@@ -30,10 +30,10 @@ enum custom_keycodes {
 #define CTL_ESC  CTL_T(KC_ESC)
 #define SFT_ENT  MT(MOD_RSFT, KC_ENT)
 #define VIM_F    LT(_VIM, KC_F)
-#define LO_EISU  LT(_LOWER, KC_LANG2)
-#define RA_KANA  LT(_RAISE, KC_LANG1)
-#define P_LO_EI  LT(_PSEUDO_US_LOWER, KC_LANG2)
-#define P_RA_KN  LT(_PSEUDO_US_RAISE, KC_LANG1)
+#define LO_EISU  LT(_LOWER, KC_MHEN)
+#define RA_KANA  LT(_RAISE, KC_HENK)
+#define P_LO_EI  LT(_PSEUDO_US_LOWER, KC_MHEN)
+#define P_RA_KN  LT(_PSEUDO_US_RAISE, KC_HENK)
 #define M_ALTPSC M(0)
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
