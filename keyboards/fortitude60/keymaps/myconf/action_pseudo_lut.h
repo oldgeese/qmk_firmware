@@ -4,6 +4,7 @@
 #define SHIFT_BIT_SIZE (0xE7 / 8 + 1) // 1bit per 1key
 
 #define IS_LSFT(kc) ((QK_LSFT & (kc)) == QK_LSFT)
+#define IS_COMMAND() (get_mods() == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)))
 
 void action_pseudo_lut(keyrecord_t *, uint8_t, const uint16_t (*)[2]);
 uint16_t convert_keycode(const uint16_t (*)[2], uint16_t, bool);
