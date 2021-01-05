@@ -43,7 +43,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   #define ws2812_DDRREG   DDRD
 #endif
 
-#define TAPPING_TERM 80
+#define TAPPING_TERM 150
 #define PREVENT_STUCK_MODIFIERS
 #define FORCE_NKRO
 
