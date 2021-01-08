@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+-------------+------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   [  |   ]  |   N  |   M  |   ,  |   .  |   /  |Enter |
  * `-------------+------+------+------+------+------+------+------+------+------+------+-------------'
- *               |  GUI | Ctrl |Lower |Space | Ctrl |Enter |Space |Raise |  Alt |  GUI |
+ *               |  Alt |  GUI |Lower |Space | GUI  |GUI   |Space |Raise |  GUI |  Alt |
  *               `---------------------------------------------------------------------'
  */
 [_QWERTY] = LAYOUT( \
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                   KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
   CTL_ESC, KC_A,    KC_S,    KC_D,    VIM_F,   KC_G,                   KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, \
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_LBRC, KC_RBRC, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, SFT_ENT, \
-                 KC_LGUI, KC_LALT, LO_EISU,  KC_SPC, KC_LSFT,  KC_ENT, KC_SPC,RA_KANA,   KC_RALT, KC_RGUI\
+                 KC_LALT, KC_LGUI, LO_EISU,  KC_SPC, KC_LGUI,  KC_RGUI, KC_SPC,RA_KANA,   KC_RGUI, KC_RALT\
 ),
 
 /* Qwerty(PSEUDO_US)
@@ -69,15 +69,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+-------------+------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   [  |   ]  |   N  |   M  |   ,  |   .  |   /  |Enter |
  * `-------------+------+------+------+------+------+------+------+------+------+------+-------------'
- *               |  GUI | Ctrl |Lower |Space | Ctrl |Enter |Space |Raise |  Alt |  GUI |
+ *               |  Alt |  GUI |Lower |Space | GUI  |GUI   |Space |Raise |  GUI |  Alt |
  *               `---------------------------------------------------------------------'
  */
 [_PSEUDO_US] = LAYOUT( \
-  KC_FN1,KC_FN1,  KC_FN1,  KC_FN1,  KC_FN1,  KC_FN1,                 KC_FN1,  KC_FN1,  KC_FN1,  KC_FN1,  KC_FN1,  KC_FN1, \
+  KC_FN1,KC_FN1,  KC_FN1,  KC_FN1,  KC_FN1,  KC_FN1,                   KC_FN1,  KC_FN1,  KC_FN1,  KC_FN1,  KC_FN1,  KC_FN1, \
   KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                   KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC,\
   CTL_ESC, KC_A,    KC_S,    KC_D,    VIM_F,   KC_G,                   KC_H,    KC_J,    KC_K,    KC_L,    KC_FN1,  KC_FN1, \
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B, KC_FN1, KC_FN1,   KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_FN1, SFT_ENT, \
-                 KC_LGUI, KC_LALT, P_LO_EI,  KC_SPC, KC_LSFT,  KC_ENT, KC_SPC,P_RA_KN,   KC_RALT, KC_RGUI\
+                 KC_LALT, KC_LGUI, P_LO_EI,  KC_SPC, KC_LGUI, KC_RGUI, KC_SPC,P_RA_KN,   KC_RGUI, KC_RALT\
 ),
 
 /* Lower
